@@ -46,19 +46,18 @@ fs.readdir(pathToCreatedFolder,(err, files)=>{
         const stats = fs.statSync(filePath);
 
         if (stats.isFile()) {
-            console.log(`${filePath}is a file`);
+            console.log(`${textElement}: is a file`);
         }else if (stats.isDirectory()) {
-            console.log(`${filePath}is a folder`);
+            console.log(`${textElement}: is a folder`);
 
             const innerFiles = fs.readdirSync(filePath);
-            const innerFilePath =path.join(__dirname)
             for (const innerElement of innerFiles) {
                 const innerFilesPath = path.join(filePath, innerElement);
-                const innerStats = fs.statSync(innerFilePath);
+                const innerStats = fs.statSync(innerFilesPath);
                 if (innerStats.isFile()) {
-                    console.log(`${innerFilePath} is a file`);
+                    console.log(`${innerElement}: is a file`);
                 }else  if (innerStats.isDirectory()) {
-                    console.log(`${innerFilePath}is a folder`);
+                    console.log(`${innerElement}: is a folder`);
                 }
             }
         }
