@@ -31,11 +31,36 @@ fs.mkdir('./text5', (err)=>{
         if(err)throw new Error();
     });
 });
-fs.readdirSync('.', {withFileTypes:true})
+/*fs.readdirSync('.', {withFileTypes:true})
     .forEach((dirTitle)=> {
         if (dirTitle.isDirectory()) {
+            if (dirTitle.isFile()) {
+                console.log(`File: ${dirTitle.name}`);}
             console.log(`Folder: ${dirTitle.name}`);
-        } else if (dirTitle.isFile()) {
-            console.log(`File: ${dirTitle.name}`);
         }
-    });
+    });*/
+const pathToCreatedFolder =path.join(__dirname)
+fs.readdir(pathToCreatedFolder,(err, files)=>{
+    for (const textElement of files) {
+        const filePath=path.join(pathToCreatedFolder, textElement);
+        const stats = fs.statSync(filePath);
+
+        if (stats.isFile()) {
+            console.log(`${filePath}is a file`);
+        }else if (stats.isDirectory()) {
+            console.log(`${filePath}is a folder`);
+
+            const innerFiles = fs.readdirSync(filePath);
+            const innerFilePath =path.join(__dirname)
+            for (const innerElement of innerFiles) {
+                const innerFilesPath = path.join(filePath, innerElement);
+                const innerStats = fs.statSync(innerFilePath);
+                if (innerStats.isFile()) {
+                    console.log(`${innerFilePath} is a file`);
+                }else  if (innerStats.isDirectory()) {
+                    console.log(`${innerFilePath}is a folder`);
+                }
+            }
+        }
+    }
+})
