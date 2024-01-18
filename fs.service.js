@@ -13,3 +13,4 @@ const write = async (users) => {
 }
 
 module.exports = {read, write}
+//console.log();
