@@ -4,15 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3f62d859-68e7-44aa-bffd-94754ea1473a" name="Changes" comment="add hw2">
-      <change afterPath="$PROJECT_DIR$/src/app.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/configs/config.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fs.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/interfaces/user.interface.ts" afterDir="false" />
+    <list default="true" id="3f62d859-68e7-44aa-bffd-94754ea1473a" name="Changes" comment="add hw3">
+      <change afterPath="$PROJECT_DIR$/src/controllers/auth.controller.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controllers/user.controller.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/errors/api.errors.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/middlewares/common.middlevare.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/user.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/repositories/user.repository.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routers/auth.router.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/db.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fs.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/fs.service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/configs/config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/configs/config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interfaces/user.interface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/interfaces/user.interface.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +32,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="hw2" />
+        <entry key="$PROJECT_DIR$" value="hw3" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -78,7 +80,7 @@
       <workItem from="1705428020131" duration="2892000" />
       <workItem from="1705437502674" duration="7937000" />
       <workItem from="1705483634754" duration="17135000" />
-      <workItem from="1705576396038" duration="2899000" />
+      <workItem from="1705576396038" duration="4484000" />
     </task>
     <task id="LOCAL-00001" summary="create directorys and files">
       <option name="closed" value="true" />
@@ -136,7 +138,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705577421249</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="add hw3">
+      <option name="closed" value="true" />
+      <created>1705579550508</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1705579550508</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -161,7 +171,8 @@
     <MESSAGE value="updated folders and files module fs" />
     <MESSAGE value="updated2 folders and files" />
     <MESSAGE value="add hw2" />
-    <option name="LAST_COMMIT_MESSAGE" value="add hw2" />
+    <MESSAGE value="add hw3" />
+    <option name="LAST_COMMIT_MESSAGE" value="add hw3" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
